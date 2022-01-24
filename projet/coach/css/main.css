@@ -1,0 +1,160 @@
+
+/*=================mise en page générale==================*/
+
+@font-face {
+  font-family: 'shapup';
+  src: url('../font/Slave.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*=================mise en page du header==================*/
+
+header > nav > a {
+  padding: 0!important;
+  min-width: 440px;
+  margin-top: -10px!important;
+}
+
+header h1, header h2 {
+  color: white;
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+
+header h1 {
+  font-family: 'shapup';
+  font-size: 3.4em;
+}
+
+header h2 {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  position: relative;
+  top: -10px;
+}
+
+
+header >nav > div {
+  width: 200px!important;
+  margin-left: auto;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/*=================mise en page de main==================*/
+
+body main {
+  margin: 100px 0 0 0!important;
+  text-align: justify;
+}
+
+#pres {
+  width: auto;
+  margin: 15px auto;
+}
+
+#pres .carousel-inner {
+  max-height: 310px;
+  margin: auto;
+}
+
+#pres .carousel-inner img {
+  width: 100%;
+}
+
+
+#pres .carousel-inner > div > div {
+  background-color: gray;
+  opacity: 0.75;
+  min-width: 100%;
+  padding-top: 0;
+  position: absolute;
+  left: 0;
+  max-height: 45%;
+}
+
+
+#pres .carousel-inner > div > div h3,
+#pres .carousel-inner > div > div p {
+  margin: 0;
+}
+
+#pres > article > div {
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#pres > article img {
+  align-content: center;
+  margin: auto;
+  max-width: 250px;
+}
+
+
+#pres > div:first-child > a {
+  background-color: rgb(41,43,44);
+}
+
+
+main iframe {
+  border: 9px solid rgb(240,173,78)!important;
+}
+
+#contact > div:nth-child(2) a i{
+  margin: 20px;
+  padding: 10px;
+  width: 70px!important;
+  height: 70px;
+  text-align: center;
+}
+
+#contact iframe {
+  width: 90%;
+  height: 350px;
+}
+
+/*==================
+MISE EN PAGE TABLET
+==================*/
+
+
+@media (min-width:768px) {
+
+  /*=================mise en page du main ==================*/
+
+  #pres > div:first-child .carousel-inner {
+    width: 500px;
+    margin: auto!important;
+  }
+
+
+}
+
+/*==================
+MISE EN PAGE LAPTOP
+==================*/
+
+
+@media (min-width:970px) {
+
+  /*=================mise en page du footer==================*/
+
+
+  footer, footer a {
+    width: 100%;
+    text-align: right;
+    font-size: 0.8em;
+    color: white;
+    margin: 0!important;
+    border: 1px solid rgb(41,43,44);
+  }
+
+  footer a:hover {
+    color: inherit;
+  }
+
+}
